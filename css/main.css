@@ -1,0 +1,115 @@
+
+*{
+    box-sizing: border-box;
+}
+/* УБИРАЕМ ОТСТУПЫ У BODY ОТ КРАЁВ*/
+body{
+    min-width: 1600px; /* ФИКСИРОВАНЫЙ ЭКРАН */
+    margin: 0;
+    font-family: sans-serif;
+}
+/*
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.video__media{
+    
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+/*СТИЛИЗУЕМ ШАПКУ (ЗАДАЁМ СТИЛИ)*/
+.header{
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    height: 100vh;
+    background-color: rgb(34, 225, 231);
+    background-image: url('../img/01jpg');
+    background-size: cover; /*РАСТЕНУТЬ ВО ВЕСЬ ЭКРАН*/
+    background-position: center ; /* КАРТИНКА ПО ЦЕНТРУ БОКСА */
+    
+
+}
+/* МАСКА */
+.htader-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(32, 178, 171, 0.2);
+}
+/* КОНТЕНЕР С ЛОГОТИПОМ */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/* ЛОГОТИП И НАВИГАЦИЯ В ОДНУ ЛИНИЮ */
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1300px;
+    padding-top: 10px; /* ОТСТУП ЛОГОТИПА ОТ ВЕРХА */
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #74c3b996;
+    z-index: 5;
+}
+.logo{
+    font-size: 45px;
+    font-weight: 800;
+    font-family: 'Sancreek', cursive;
+    color: rgb(4, 40, 201);
+    text-shadow: 1px 1px 6px  rgb(72, 248, 18);
+    z-index: 3;
+}
+
+
+/* ДЕСКТОП НАВИГАЦИЯ */
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.nav__item{
+    margin-right: 25px; /* ОТСТУП МЕЖДУ МЕНЮШЕК С ПРАВА*/
+    font-family: 'Vollkorn', serif;
+    z-index: 3;
+}
+.nav__item:last-child{
+    margin-right: 0px; /* УБЕРАЕМ ОТСТУП* ОТСТУП У ПОСЛЕДНЕГО ЭЛЕМЕНТА */
+
+}
+
+.nav__link{
+    font-size: 40px;
+    font-weight: 600;
+    color:rgb(4, 40, 201);
+    text-shadow: 1px 1px 4px  rgb(1, 247, 42);
+    text-decoration: none;
+}
+
+
+.link{
+    color: rgb(202, 11, 11);
+}
+
+
+/* ПСЕВДОКЛАСЫ */
+.nav__link:hover{
+    color: rgba(218, 221, 12, 0.829);
+    text-shadow: 1px 1px 4px  rgb(4, 40, 201);
+}
+    .link:hover{
+        color: rgba(218, 221, 12, 0.829);
+        text-shadow: 1px 1px 4px  rgb(4, 40, 201);
+}
+.nav__link:active{
+    color: rgba(12, 221, 193, 0.829);
+    text-shadow: 1px 1px 4px  rgb(201, 4, 4);
+}
