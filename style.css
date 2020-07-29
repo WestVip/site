@@ -1,0 +1,156 @@
+*,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home { 
+    width: 100vw;
+    max-height: 100vh;
+    /*background: url(Warface.jpg) center/cover no-repeat ;*/
+    overflow: hidden;
+    position: relative;
+}
+/* МАСКА ВИДЕО */
+.home::before { 
+    content: "" ;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.home__video {  
+    padding-bottom: 56.25%;
+}
+
+.home video { 
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+/* МЕНЮ НАВИГАЦИИ */
+
+
+.n { 
+    font-size: 2.3vw;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(10, 26, 245, 0.774);
+    text-shadow: 1px 1px 0px rgba(252, 18, 18, 0.76),
+    -1px -1px 0px rgba(252, 18, 18, 0.76),
+    2px 2px 3px rgba(50, 238, 25, 0.76);
+    
+}
+.td {
+    text-decoration: underline  ;
+    color: rgba(10, 26, 245, 0.774);
+    text-shadow: 1px 1px 3px rgba(252, 18, 18, 0.76),
+    -1px -1px 3px rgba(252, 18, 18, 0.76),
+    2px 2px 9px rgba(50, 238, 25, 0.753);
+    
+}
+.n:hover {
+    color: rgba(233, 14, 14, 0.836);
+    text-shadow: 2px 2px 5px rgba(16, 50, 243, 0.822);
+}
+
+
+.bg {
+    background-color: rgba(9, 253, 233, 0.493);
+    height: 5vw;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    font-size: 3vw;
+    z-index: 4; 
+    padding-left: 13.5vw;
+}
+
+.nav{  font-family: 'Ruslan Display', cursive;
+    /*position: absolute;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+     z-index: 5;*/
+    display: inline-block;
+    padding: 1.2vw;
+    top: 4px; padding-left: 3vw;
+    color: lightseagreen;
+}
+
+
+
+
+/* КОНТЕНТ */
+.home__content{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    font-size: 34px;
+    z-index: 3;
+}
+
+.home__content h1  {
+    font-size: 4vw;
+    font-family: 'Sancreek', cursive;
+    margin: 0 0 1vw;
+    font-weight: 300;
+    text-align: center;
+    color: rgba(49, 192, 13, 0.829);
+    text-shadow: 2px 2px 0px rgba(252, 18, 37, 0.664),
+    -2px -2px 0px rgba(252, 18, 37, 0.664),
+    1px 1px 16px rgb(18, 112, 252);
+}
+
+    
+.home__content p {
+    font-family: 'UnifrakturCook', cursive;/* font-family: 'Underdog', cursive;*/
+    font-size: 3vw;
+    font-weight: 900;
+    text-align: center;
+    color: rgba(49, 192, 13, 0.829);
+    text-shadow: 2px 2px 0px rgba(252, 18, 37, 0.664),
+    -2px -2px 0px rgba(252, 18, 37, 0.664),
+    1px 1px 14px rgb(18, 112, 252);
+}
+/*================================================*/
+
+
+td {
+    text-align: center;
+    /*color: rgba(13, 9, 247, 0.849);*/
+   font-size: 2vw;
+   color: rgba(202, 190, 190, 0.979);
+    text-shadow: 2px 2px 0px rgba(252, 18, 18, 0.61),
+    -1px -1px 0px rgba(252, 18, 18, 0.473),
+    2px 2px 6px rgba(50, 238, 25, 0.76);
+}
+
+
+div.boost {
+    
+    width: 77%;
+    overflow: auto;
+    height: 40vw;
+   margin-left: 20vw;
+    font-size: 2vw;
+    font-size: 900;
+    background-color: rgba(12, 236, 217, 0);
+    font-family: 'Sancreek', cursive;
+  }
+  
